@@ -1,0 +1,240 @@
+/* Fuentes y estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo de las secciones */
+section {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section */
+.hero {
+    padding: 150px 0;
+    background: url('img/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para los botones */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Formulario */
+.form-control, .form-select {
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Cards (platillos) */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Sección de contacto y formulario */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Espaciado y alineación del footer */
+footer .container {
+    text-align: center;
+}
+
+/* Imágenes de los platillos */
+.card-img-top {
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Sombra en el header (hero section) */
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+/* Carrusel de imágenes */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Fondo más suave en las secciones */
+section {
+    background-color: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formato para el formulario de contacto */
+textarea {
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Fondo de las secciones */
+section {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Elementos sin borde pero con sombra */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+button, .card button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .card button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+/* Sombra más sutil para las tarjetas */
+.card-body {
+    padding: 25px;
+    background-color: #f9f9f9;
+}
+
+/* Media Queries para hacer el diseño responsive */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .hero {
+        padding: 80px 20px;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .carousel-item img {
+        height: 250px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 20px;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    section {
+        padding: 30px;
+    }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media (min-width: 1200px) {
+    .container {
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+}
